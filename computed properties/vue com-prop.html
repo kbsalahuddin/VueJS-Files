@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			
+			<button v-on:click="a++">Add to A</button>
+			<button v-on:click="b++">Add to B</button>
+			<p>A-{{a}}</p>
+			<p>B-{{b}}</p>
+			<!--<p>Age+A={{addToA()}}</p>-->
+			<!--as methods-->
+			<!--<p>Age+B={{addToB()}}</p>-->
+			<!--as methods-->
+			
+			<p>Age+A={{addToA}}</p><!--as computed methods-->
+			<p>Age+B={{addToB}}</p><!--as computed methods-->
+<!--computed properties knows when to run individually as oppose to methods-->
+		</div>
+
+		
+		<script src="app-5.js"></script>
+	</body>
+</html>

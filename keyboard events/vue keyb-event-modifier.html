@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			
+			<label>Name:</label>
+			<input type="text" v-on:keyup.enter="logName" />
+
+			<label>Age:</label>
+			<input type="text" v-on:keyup.alt.enter="logAge" />
+		</div>
+<!--when outputing the result of a fucntion only then add () parenthesis must be typed-->
+		
+		<script src="app-3.js"></script>
+	</body>
+</html>

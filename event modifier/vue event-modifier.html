@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			
+			<button @click.once="add(1)">Add</button><!--event-modifier once-->
+			<button v-on:click="sub(1)">Subtract</button>
+			<button @dblclick="add(10)">Add 10</button>
+			<button v-on:dblclick="sub(10)">Subtract 10</button>
+			
+			<div id="canvas" v-on:mousemove="updateXY">
+				{{x}}, {{y}}
+			</div>
+
+			<p>My age is {{ age }}</p>
+
+			<a v-on:click.prevent="click" href="http://www.google.com">Google</a><!--prevents the link followup-->
+		</div>
+<!--when outputing the result of a fucntion only then add () parenthesis must be typed-->
+		
+		<script src="app-2.js"></script>
+	</body>
+</html>

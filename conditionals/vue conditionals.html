@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			
+			<button v-on:click="error = !error">toggle error</button>
+			<button v-on:click="success = !success">toggle success</button>
+			<p v-if="error">paragraph one</p>
+			<p v-else-if="success">paragraph two</p>
+			<!--if error is true success wont show up-->
+			<p v-show="error">paragraph three</p>
+			<p v-show="success">paragraph four</p>
+			<!--show dont remove the markup unlike if they just change the display:none style-->
+		</div>
+
+		
+		<script src="app-7.js"></script>
+	</body>
+</html>
