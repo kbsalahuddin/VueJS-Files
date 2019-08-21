@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<h1>{{greet('Night')}}</h1>
+			<h1>{{name}}</h1>
+			<p>{{nation}}</p>
+			<a v-bind:href="website">Net Ninja</a><!--binding-->
+			<p v-html="websiteTag"></p><!--specific binding-->
+		</div>
+
+		
+		<script src="app.js"></script>
+	</body>
+</html>
