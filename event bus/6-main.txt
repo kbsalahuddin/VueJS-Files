@@ -1,0 +1,14 @@
+import Vue from 'vue'
+import App from './App.vue'
+/*import Ninjas from './Ninjas.vue'
+
+
+Vue.component("ninjas",Ninjas); */
+/*for globally*/
+export const bus = new Vue(); /*event bus enabler*/
+
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
